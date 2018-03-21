@@ -1,0 +1,9 @@
+
+This is intended to be the collection of all my dotfiles.
+
+There is a lot of configuration still to be implemented, but the basic idea is
+currently working.
+
+I have taken the ideas from this [[https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/][blog post]] and this [[https://news.ycombinator.com/item?id=11071754][thread]].
+
+I will give a detailed explanation about how this works once I have it fully working.
