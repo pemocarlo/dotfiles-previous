@@ -727,7 +727,6 @@ You can add more languages with (language . t)
 
 #+END_SRC
 
-
 * Programming languages
 ** Python
 Some configurations for elpy mode taken from [[https://github.com/jorgenschaefer/elpy/wiki/Configuration][here]]
@@ -811,3 +810,22 @@ Use company mode with bash
   (setq clang-format-style-option "llvm"))
 
 #+END_SRC
+
+* Git
+Adding a new section about all git-related stuff
+
+** Magit
+Magit is an interface to the version control system Git, implemented as an
+Emacs package.
+
+#+BEGIN_SRC emacs-lisp :results silent
+(use-package magit
+  :ensure t
+  :init
+  (progn
+  (bind-key "C-x g" 'magit-status)
+  )
+  :config
+  (setq vc-handled-backends (delq 'Git vc-handled-backends)))
+#+END_SRC
+

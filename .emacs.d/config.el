@@ -518,3 +518,12 @@
   (global-set-key (kbd "C-c u") 'clang-format-buffer)
 
   (setq clang-format-style-option "llvm"))
+
+(use-package magit
+  :ensure t
+  :init
+  (progn
+  (bind-key "C-x g" 'magit-status)
+  )
+  :config
+  (setq vc-handled-backends (delq 'Git vc-handled-backends)))
