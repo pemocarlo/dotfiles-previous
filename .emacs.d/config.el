@@ -526,4 +526,6 @@
   (bind-key "C-x g" 'magit-status)
   )
   :config
-  (setq vc-handled-backends (delq 'Git vc-handled-backends)))
+  (setq vc-handled-backends (delq 'Git vc-handled-backends))
+  (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
+)
